@@ -2,21 +2,21 @@
 
 Clases:
 
-///// Clase Pregunta: representa una pregunta del juego.
+///// Clase Pregunta (IAN) : representa una pregunta del juego.
 -Atributos:
   idPregunta
   enunciado
   opciones
-  respuestaCorrecta
+  respuestaCorrecta (int id)
   categoria
 
 - Métodos:
   int getIdPregunta() → devuelve el identificador de la pregunta
   String getEnunciado() → devuelve el enunciado
   String[] getOpciones() → devuelve las opciones posibles
-  String getRespuestaCorrecta() → devuelve la respuesta correcta
+  int getRespuestaCorrecta() → devuelve la respuesta correcta
   String getCategoria() → devuelve la categoría
-  boolean esCorrecta(String respuestaDada) → indica si la respuesta ingresada es correcta
+  boolean esCorrecta(int idRespuestaDada) → indica si la respuesta ingresada es correcta
 
 ///// Clase Jugador: 
 - Atributos:
