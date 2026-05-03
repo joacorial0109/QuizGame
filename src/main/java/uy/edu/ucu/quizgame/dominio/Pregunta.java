@@ -25,6 +25,7 @@ public class Pregunta {
         return respuestaCorrecta==idRespuestaDada;
     }
 
+
     @Override
     public String toString() {
         String resultado = enunciado + "\n";
