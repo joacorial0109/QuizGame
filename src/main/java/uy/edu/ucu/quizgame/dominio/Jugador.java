@@ -1,6 +1,6 @@
 package uy.edu.ucu.quizgame.dominio;
 
-import uy.edu.ucu.quizgame.tda.Lista;
+import uy.edu.ucu.quizgame.tda.TDALista;
 import uy.edu.ucu.quizgame.tda.ListaEnlazada;
 
 public class Jugador {
@@ -9,7 +9,7 @@ public class Jugador {
     private String nombre;
     private int puntajeActual;
     private int cantidadCorrectas;
-    private Lista<Respuesta> historialRespuestas;
+    private TDALista<Respuesta> historialRespuestas;
 
     public Jugador(int idJugador, String nombre) {
         this.idJugador = idJugador;
@@ -68,12 +68,12 @@ public class Jugador {
     }
 
     public void eliminarUltimaRespuesta() {
-        if (!this.historialRespuestas.estaVacia()) {
-            this.historialRespuestas.eliminarUltimo();
+        if (!this.historialRespuestas.esVacio()) {
+            this.historialRespuestas.remover(this.historialRespuestas.tamaño() - 1);
         }
     }
 
-    public Lista<Respuesta> getHistorialRespuestas() {
+    public TDALista<Respuesta> getHistorialRespuestas() {
         return historialRespuestas;
     }
 
