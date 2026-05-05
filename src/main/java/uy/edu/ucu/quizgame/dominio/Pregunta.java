@@ -1,6 +1,6 @@
 package uy.edu.ucu.quizgame.dominio;
 
-public class Pregunta {
+public class Pregunta implements Comparable<Pregunta>{
     private int idPregunta;
     private String enunciado;
     private String[] opciones;
@@ -33,5 +33,10 @@ public class Pregunta {
             resultado += (i + 1) + ". " + opciones[i] + "\n";
         }
         return resultado;
+    }
+
+    @Override
+    public int compareTo(Pregunta o) {
+        return Integer.compare(this.idPregunta, o.idPregunta);
     }
 }
