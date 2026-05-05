@@ -3,7 +3,7 @@ package uy.edu.ucu.quizgame.dominio;
 import uy.edu.ucu.quizgame.tda.TDALista;
 import uy.edu.ucu.quizgame.tda.ListaEnlazada;
 
-public class Jugador {
+public class Jugador implements Comparable<Jugador> {
 
     private int idJugador;
     private String nombre;
@@ -85,5 +85,10 @@ public class Jugador {
                 ", puntajeActual=" + puntajeActual +
                 ", cantidadCorrectas=" + cantidadCorrectas +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Jugador otro) {
+        return Integer.compare(this.idJugador, otro.idJugador);
     }
 }
