@@ -75,7 +75,120 @@ Clases:
   int calcularPuntajeTotal(Jugador jugador) → devuelve el puntaje total
   Jugador determinarGanador() → retorna el jugador con mayor puntaje
   void deshacerUltimaRespuesta() → revierte la última respuesta registrada
+-----------------------
+public class QuizGame {
 
+    // Estructuras principales
+    private AVL<Jugador> jugadores;
+    private AVL<Pregunta> preguntas;
+
+    // Flujo del juego
+    private ColaCircular<Jugador> turnosJugadores;
+    private Cola<Pregunta> preguntasPendientes;
+
+    // Historial para deshacer
+    private Pila<Respuesta> respuestasRegistradas;
+
+    // Estado actual
+    private Jugador jugadorActual;
+    private Pregunta preguntaActual;
+
+    // -------------------------
+    // CARGA / REGISTRO
+    // -------------------------
+
+    public void registrarJugador(Jugador jugador) {
+        // valida duplicado e inserta en AVL
+    }
+
+    public boolean existeJugador(int idJugador) {
+        // busca en AVL por id
+    }
+
+    public void registrarPregunta(Pregunta pregunta) {
+        // valida duplicado e inserta en AVL
+    }
+
+    public boolean existePregunta(int idPregunta) {
+        // busca en AVL por id
+    }
+
+    public void eliminarPregunta(int idPregunta) {
+        // elimina del AVL
+    }
+
+    public void cargarJugadoresCSV(String ruta) {
+        // lee archivo y llama a registrarJugador
+    }
+
+    public void cargarPreguntasCSV(String ruta) {
+        // lee archivo y llama a registrarPregunta
+    }
+
+    // -------------------------
+    // INICIO DEL JUEGO
+    // -------------------------
+
+    public void iniciarJuego() {
+        iniciarTurnos();
+        cargarPreguntasPendientes();
+    }
+
+    public void iniciarTurnos() {
+        // recorre AVL de jugadores y los carga en la cola circular
+    }
+
+    public void cargarPreguntasPendientes() {
+        // recorre AVL de preguntas y las pasa a una cola
+    }
+
+    // -------------------------
+    // TURNOS
+    // -------------------------
+
+    public Jugador obtenerJugadorActual() {
+        return jugadorActual;
+    }
+
+    public Pregunta obtenerPreguntaActual() {
+        return preguntaActual;
+    }
+
+    public void avanzarTurno() {
+        // toma el siguiente jugador de la cola circular
+        // toma la siguiente pregunta pendiente
+    }
+
+    // -------------------------
+    // RESPUESTAS
+    // -------------------------
+
+    public void procesarRespuesta(int idRespuestaDada) {
+        // compara idRespuestaDada con idRespuestaCorrecta
+        // actualiza puntaje
+        // guarda respuesta en historial
+        // avanza turno
+    }
+
+    public void deshacerUltimaRespuesta() {
+        // saca la última respuesta de la pila
+        // restaura puntaje si era correcta
+        // devuelve la pregunta si corresponde
+    }
+
+    // -------------------------
+    // RESULTADOS
+    // -------------------------
+
+    public int calcularPuntajeTotal(Jugador jugador) {
+        return jugador.getPuntajeActual();
+    }
+
+    public Jugador determinarGanador() {
+        // recorre jugadores y devuelve el de mayor puntaje
+    }
+}
+-------------------------------
 ///// Clase Main: ejecución de flujo del juego
 crear instancia de QuizGame
 cargar jugadores
