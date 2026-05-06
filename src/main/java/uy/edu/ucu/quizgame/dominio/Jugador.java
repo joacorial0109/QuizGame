@@ -76,6 +76,12 @@ public class Jugador implements Comparable<Jugador> {
     public TDALista<Respuesta> getHistorialRespuestas() {
         return historialRespuestas;
     }
+    
+    public void reiniciarParaNuevaPartida() {
+    this.puntajeActual = 0;
+    this.cantidadCorrectas = 0;
+    this.historialRespuestas.vaciar();
+}
 
     @Override
     public String toString() {
