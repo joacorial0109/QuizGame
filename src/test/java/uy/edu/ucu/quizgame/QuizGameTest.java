@@ -1,4 +1,4 @@
-package uy.edu.ucu;
+package uy.edu.ucu.quizgame;
 
 import org.junit.jupiter.api.Test;
 import uy.edu.ucu.quizgame.dominio.Jugador;
