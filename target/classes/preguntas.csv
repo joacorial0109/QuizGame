@@ -1,0 +1,17 @@
+idPregunta,enunciado,opcion1,opcion2,opcion3,opcion4,idRespuestaCorrecta,categoria
+1,¿Cuál es la capital de Uruguay?,Montevideo,Buenos Aires,Santiago,Lima,1,Geografía
+2,¿Qué estructura de datos funciona con LIFO?,Cola,Pila,AVL,Grafo,2,Algoritmos
+3,¿Cuánto es 5 x 6?,25,35,30,40,3,Matemática
+4,¿Qué planeta es conocido como el planeta rojo?,Venus,Marte,Júpiter,Saturno,2,Ciencia
+5,¿Qué estructura mantiene los elementos ordenados y balanceados?,Lista,Pila,AVL,Cola,3,Algoritmos
+6,¿Cuál es el océano más grande del mundo?,Atlántico,Índico,Ártico,Pacífico,4,Geografía
+7,¿Cuánto es 9 + 8?,15,16,17,18,3,Matemática
+8,¿Qué lenguaje se utiliza en este proyecto?,Python,C++,Java,JavaScript,3,Programación
+9,¿Cuál es la capital de Argentina?,Montevideo,Santiago,Brasilia,Buenos Aires,4,Geografía
+10,¿Qué método se utiliza para iniciar un hilo en Java?,run(),start(),execute(),begin(),2,Programación
+11,¿Cuál es el resultado de 12 / 3?,2,3,4,5,3,Matemática
+12,¿Qué estructura funciona con FIFO?,Pila,AVL,Cola,Árbol binario,3,Algoritmos
+13,¿Qué país ganó el Mundial 2022?,Brasil,Argentina,Francia,Alemania,2,Deportes
+14,¿Qué símbolo se usa para comentarios de una línea en Java?,//,<!-- -->,#,**,1,Programación
+15,¿Cuál es el resultado de 7 x 8?,54,56,58,64,2,Matemática
+16,¿Qué estructura permite almacenar elementos en forma jerárquica?,Cola,Pila,Árbol,Lista,3,Algoritmos
